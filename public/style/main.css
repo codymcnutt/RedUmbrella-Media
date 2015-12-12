@@ -1,0 +1,35 @@
+body{
+	background-color: black;
+}
+.intro{
+	background-color: #FCFDFA;
+    top: -5%;
+    position: absolute;
+    height: 105%;
+    width: 100%;
+}
+.redIntro{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2%;
+}
+.introText{
+	color: red;
+	font-size: 32px;
+	font-family: courier;
+	text-align: center;
+	margin: auto;
+	background-color: #FCFDFA;
+}
+header{
+	background-color: rgba (128,0,0, 0.7);
+    width: 100%;
+    top: -1vh;
+    position: fixed;
+    left: -1vh;
+}
+
+.menulogo{
+	    width: 4%;
+}
