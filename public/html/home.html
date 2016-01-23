@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="winterApp" class="background">
+<html lang="en" ng-app="umbrellaApp" class="background">
   <head>
     <meta charset="utf-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
@@ -10,25 +10,29 @@
     
     
     <link rel="stylesheet" href="../style/main.css">
-   
+   <link rel="stylesheet" href="../style/animate.css">
   </head>
 
 
   <body ng-controller="umbrellaController" >
 <!-- intro Div here  -->
-  <div class="intro">
+     <div ng-hide="!splashToggle"class="intro">
 
-<img class="redIntro" src="./images/redumbrellaintro.gif">
-<p class="introText"> Welcome to Red Umbrella Media </p>
-</div>
-      <header>
-          <ul style="list-style: none;">
-              <li><img class="menulogo"src='./images/redumbrellalogo.png'></li>
-              
-          </ul>
-      </header>
+          <img ng-hide="!splashToggle"class="redIntro" src="./images/redumbrellaintro.gif">
+          <p ng-hide="!splashToggle" class="introText"> Welcome to Red Umbrella Media <br>
+          <button ng-hide="!splashToggle" class="mainbutton"ng-hide="!splashToggle" ng-click="splashToggle=false;"   type="button">Enter Site</button></p>
+     </div>
+        <header>
+            <div class="headerLogo">
+               <img class="menulogo"src='./images/redumbrellalogo.png'>
+                <p class="logoText"> Red <br> &nbsp;Umbrella <br> &nbsp; &nbsp;Media</p>
+            </div>
+             <div>
+               
+            </div>
+        </header>
 
-    <link rel="stylesheet" href="../style/main.css">
+
    <script src="../javascript/main.js"></script>
   </body>
 

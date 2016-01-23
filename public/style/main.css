@@ -7,6 +7,7 @@ body{
     position: absolute;
     height: 105%;
     width: 100%;
+    left: 0;
 }
 .redIntro{
 	display: block;
@@ -21,15 +22,48 @@ body{
 	text-align: center;
 	margin: auto;
 	background-color: #FCFDFA;
+	text-shadow:silver 6px 6px 4px;
 }
 header{
+	z-index: -1;
 	background-color: rgba (128,0,0, 0.7);
     width: 100%;
     top: -1vh;
     position: fixed;
-    left: -1vh;
+        background: ghostwhite;
+       width: 102vw;
+    left: -5px;
 }
 
 .menulogo{
 	    width: 4%;
 }
+.mainbutton{
+    margin-top: 7px;
+    border-radius: 8px;
+    background-color: red;
+    font-family: courier;
+    border-color: none;
+    border: none;
+    font-size: 19px;
+    padding: 23px;
+    color: ghostwhite;
+    box-shadow:silver 6px 6px 9px;
+    cursor: pointer;
+}
+
+.headerLogo{ 
+    list-style: none;
+    padding-left: 9px;
+    padding-top: 11px;
+box-shadow: red 0px -50px 200px 6px;
+}
+.logoText {
+    color: red;
+    font-size: 15px;
+    font-family: courier;
+    text-shadow: silver 3px 2px 5px;
+    left: 75px;
+    position: absolute;
+    top: -5px;
+ }
